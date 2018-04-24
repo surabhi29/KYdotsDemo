@@ -163,4 +163,5 @@ GET /studentdetails/studentdetails/_search
   }
 } 
 
+ImageRead is the class used for reading the data from the image using Tesseract library.
 
