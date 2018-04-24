@@ -1,0 +1,21 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 25000
+  adminConnectors:
+    - type: http
+      port: 25001
+  applicationContextPath: /api.test.com/v1
+
+logging:
+  level: info
+  loggers:
+    io.dropwizard: info
+    org.apache.zookeeper: WARN
+    org.apache.hadoop.hbase.zookeeper: WARN
+    org.apache.hadoop.hbase.app: WARN
+    org.apache.hadoop.ipc.RpcClient: WARN
+    org.apache.hadoop.hbase.catalog.CatalogTracker: WARN
+  appenders:
+    - type: console
+
